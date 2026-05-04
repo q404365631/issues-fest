@@ -38,7 +38,7 @@ def get_webhooks(event):
     """Get all webhooks for an event"""
     return webhooks[event]
 
-# TYPO: "seralize" instead of "serialize"
+# FIXED: "serialize" (was "seralize")
 # BUG: No error handling for non-serializable objects
 def serialize_payload(data):
     """Serialize data to JSON"""

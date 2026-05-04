@@ -60,13 +60,13 @@ def update_json_file(filepath, updates):
     data.update(updates)
     write_json(filepath, data)
 
-# TYPO: "seralize" instead of "serialize"
+# FIXED: "serialize" (was "seralize")
 def serialize(obj):
     """Serialize object to JSON string"""
     # BUG: No handling for non-serializable objects
     return json.dumps(obj)
 
-# TYPO: "deseralize" instead of "deserialize"
+# FIXED: "deserialize" (was "deseralize")
 def deserialize(json_string):
     """Deserialize JSON string to object"""
     return json.loads(json_string)

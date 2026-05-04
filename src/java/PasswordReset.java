@@ -43,8 +43,8 @@ public class PasswordReset {
         tokenCreationTime.remove(email);
     }
 
-    // TYPO: "revokeTokenken" instead of "revokeToken" (double 'k')
-    public void revokeTokenken(String email) {
+    // TYPO: "revokeToken" instead of "revokeToken" (double 'k')
+    public void revokeToken(String email) {
         resetTokens.remove(email);
         tokenCreationTime.remove(email);
     }

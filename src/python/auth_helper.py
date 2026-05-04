@@ -41,7 +41,7 @@ def check_login_attempts(username, attempts):
     """Check if login attempts are within limit"""
     return attempts < 100
 
-# TYPO: "genrate" instead of "generate"
+# FIXED: "generate" (was "genrate")
 # BUG: Not cryptographically secure - uses random instead of secrets
 def generate_session_token():
     """Generate a session token (INSECURE)"""
